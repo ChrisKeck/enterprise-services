@@ -62,9 +62,13 @@ spring:
     properties:
       hibernate.id.new_generator_mappings: true
       hibernate.connection.provider_disables_autocommit: true
-      hibernate.cache.use_second_level_cache: false
+      hibernate.cache.use_second_level_cache: true
       hibernate.cache.use_query_cache: false
       hibernate.generate_statistics: false
+      hibernate.cache.region.factory_class: com.hazelcast.hibernate.HazelcastCacheRegionFactory
+      hibernate.cache.hazelcast.instance_name: egateway
+      hibernate.cache.use_minimal_puts: true
+      hibernate.cache.hazelcast.use_lite_member: true
   # Replace by 'prod, faker' to add the faker context and have sample data loaded in production
   liquibase:
     contexts: prod
@@ -142,7 +146,7 @@ jhipster:
         # - In the JHipster Registry (which includes a Spring Cloud Config server)
         # - In a separate `application-prod.yml` file, in the same folder as your executable JAR file
         # - In the `JHIPSTER_SECURITY_AUTHENTICATION_JWT_BASE64_SECRET` environment variable
-        base64-secret: YmU3NDM1MDlkM2UwOWUzZGI4M2M0YjRmNWE5NDJlYmZkZDQ4MGMxN2M3OWZlMDNjMmNiODdlY2UyODgxNGE2YmFhNWVjYWE2ODQ0YjIyOTU1MmUyM2VlZDk4N2UzZDllNmVkYTgwOGZhMzY2YWM5NGNhNDI3YzEwYzZjMDQ1NTI=
+        base64-secret: ZGQ2M2JkNmFjYmUxMmE2NzkyOWRhZDljM2YyMDQxZjUzNGZkY2NhNzNhN2VjN2UxMTg5MjlkYmQ3OWEzMmEwNmNlODlkZWI1NjFmMmE0NmY0Y2U4MjM1NjI4ZmU1YTI1MDY0Y2VkYjEwYTlhMTE1NjcwZTA2NjY0YzFjNmJmNjE=
         # Token is valid 24 hours
         token-validity-in-seconds: 86400
         token-validity-in-seconds-for-remember-me: 2592000

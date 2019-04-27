@@ -12,7 +12,7 @@
     "serverPort": "8080",
     "authenticationType": "jwt",
     "cacheProvider": "hazelcast",
-    "enableHibernateCache": false,
+    "enableHibernateCache": true,
     "websocket": false,
     "databaseType": "sql",
     "devDatabaseType": "h2Disk",
@@ -22,7 +22,7 @@
     "serviceDiscoveryType": "eureka",
     "buildTool": "maven",
     "enableSwaggerCodegen": false,
-    "jwtSecretKey": "YmU3NDM1MDlkM2UwOWUzZGI4M2M0YjRmNWE5NDJlYmZkZDQ4MGMxN2M3OWZlMDNjMmNiODdlY2UyODgxNGE2YmFhNWVjYWE2ODQ0YjIyOTU1MmUyM2VlZDk4N2UzZDllNmVkYTgwOGZhMzY2YWM5NGNhNDI3YzEwYzZjMDQ1NTI=",
+    "jwtSecretKey": "ZGQ2M2JkNmFjYmUxMmE2NzkyOWRhZDljM2YyMDQxZjUzNGZkY2NhNzNhN2VjN2UxMTg5MjlkYmQ3OWEzMmEwNmNlODlkZWI1NjFmMmE0NmY0Y2U4MjM1NjI4ZmU1YTI1MDY0Y2VkYjEwYTlhMTE1NjcwZTA2NjY0YzFjNmJmNjE=",
     "testFrameworks": [
       "gatling",
       "cucumber"
@@ -30,64 +30,7 @@
     "jhiPrefix": "jhi",
     "entitySuffix": "",
     "dtoSuffix": "DTO",
-    "otherModules": [
-      {
-        "name": "generator-jhipster-standalone-profile",
-        "version": "2.3.0"
-      },
-      {
-        "name": "generator-jhipster-docker",
-        "version": "2.5.0"
-      },
-      {
-        "name": "generator-jhipster-swagger-cli",
-        "version": "3.0.1"
-      },
-      {
-        "name": "generator-jhipster-spring-cloud-stream",
-        "version": "1.0.0"
-      },
-      {
-        "name": "generator-jhipster-quota",
-        "version": "1.0.3"
-      },
-      {
-        "name": "generator-jhipster-administration-database",
-        "version": "1.0.4"
-      },
-      {
-        "name": "generator-jhipster-translation",
-        "version": "1.0.4"
-      },
-      {
-        "name": "generator-jhipster-database-backup",
-        "version": "1.0.7"
-      },
-      {
-        "name": "generator-jhipster-jgitver",
-        "version": "0.1.0"
-      },
-      {
-        "name": "generator-jhipster-testcontainers",
-        "version": "0.1.1"
-      },
-      {
-        "name": "generator-jhipster-obfuscation-at-rest",
-        "version": "0.3.0"
-      },
-      {
-        "name": "generator-jhipster-kaas",
-        "version": "1.2.0"
-      },
-      {
-        "name": "generator-jhipster-chatbot-rasa",
-        "version": "1.0.4"
-      },
-      {
-        "name": "generator-jhipster-file2url",
-        "version": "0.0.0"
-      }
-    ],
+    "otherModules": [],
     "enableTranslation": true,
     "clientPackageManager": "npm",
     "nativeLanguage": "de",
