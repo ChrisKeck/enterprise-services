@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "de.iso.apps",
+      "nativeLanguage": "de"
+    },
+    "jhipsterVersion": "6.0.0-beta.0",
+    "applicationType": "microservice",
+    "baseName": "efwservice",
+    "packageName": "de.iso.apps",
+    "packageFolder": "de/iso/apps",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NTM2ODE0M2E1M2I0MTNhMzQ2MWIzOGEwM2JlMjdmNWEwODkxMWZmZTkwYmE3NjFlMzNiZjk3YWFmNjBjN2UzMTc5NjNiZDFjYjhkZWExZjBkM2UxNWQwODVkNTMwNzFmNWZiYTA4YTU2Y2MzNjZiZTkwMmU2ODA5NzlmMDg5NWE=",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "de",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
