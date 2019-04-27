@@ -1,0 +1,11 @@
+version: '2'
+services:
+  egateway-postgresql:
+    image: postgres:11.2
+    # volumes:
+    #     - ~/volumes/jhipster/egateway/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=egateway
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432

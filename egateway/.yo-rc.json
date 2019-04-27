@@ -1,0 +1,100 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "de.iso.apps",
+      "nativeLanguage": "de"
+    },
+    "jhipsterVersion": "6.0.0-beta.0",
+    "applicationType": "gateway",
+    "baseName": "egateway",
+    "packageName": "de.iso.apps",
+    "packageFolder": "de/iso/apps",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YmU3NDM1MDlkM2UwOWUzZGI4M2M0YjRmNWE5NDJlYmZkZDQ4MGMxN2M3OWZlMDNjMmNiODdlY2UyODgxNGE2YmFhNWVjYWE2ODQ0YjIyOTU1MmUyM2VlZDk4N2UzZDllNmVkYTgwOGZhMzY2YWM5NGNhNDI3YzEwYzZjMDQ1NTI=",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-standalone-profile",
+        "version": "2.3.0"
+      },
+      {
+        "name": "generator-jhipster-docker",
+        "version": "2.5.0"
+      },
+      {
+        "name": "generator-jhipster-swagger-cli",
+        "version": "3.0.1"
+      },
+      {
+        "name": "generator-jhipster-spring-cloud-stream",
+        "version": "1.0.0"
+      },
+      {
+        "name": "generator-jhipster-quota",
+        "version": "1.0.3"
+      },
+      {
+        "name": "generator-jhipster-administration-database",
+        "version": "1.0.4"
+      },
+      {
+        "name": "generator-jhipster-translation",
+        "version": "1.0.4"
+      },
+      {
+        "name": "generator-jhipster-database-backup",
+        "version": "1.0.7"
+      },
+      {
+        "name": "generator-jhipster-jgitver",
+        "version": "0.1.0"
+      },
+      {
+        "name": "generator-jhipster-testcontainers",
+        "version": "0.1.1"
+      },
+      {
+        "name": "generator-jhipster-obfuscation-at-rest",
+        "version": "0.3.0"
+      },
+      {
+        "name": "generator-jhipster-kaas",
+        "version": "1.2.0"
+      },
+      {
+        "name": "generator-jhipster-chatbot-rasa",
+        "version": "1.0.4"
+      },
+      {
+        "name": "generator-jhipster-file2url",
+        "version": "0.0.0"
+      }
+    ],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "de",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "skipClient": true
+  }
+}
