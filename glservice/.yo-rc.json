@@ -1,0 +1,44 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "de.iso.apps",
+      "nativeLanguage": "de"
+    },
+    "jhipsterVersion": "6.0.0-beta.0",
+    "applicationType": "microservice",
+    "baseName": "glservice",
+    "packageName": "de.iso.apps",
+    "packageFolder": "de/iso/apps",
+    "serverPort": "8082",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": "kafka",
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "OTEwM2VlOThlZDM0YTUyZGJkMWM3OWFhMzNlYjkzZmJmODEwMmY2ZGU3OWQzNTgxZjQyMzk2MmIyNDQ3OTg2Y2ZjOTQxMDJhNDczMzFmYzI4NjM2ZGY3YzM1ZjA0N2M3ODk4ODg3MWM0MTRjNTNkOTdiNWM1OTA0NmFmMmUzNTE=",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "de",
+    "languages": [
+      "de",
+      "en"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
