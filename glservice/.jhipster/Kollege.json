@@ -1,0 +1,32 @@
+{
+    "name": "Kollege",
+    "fields": [
+        {
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "bestellung",
+            "otherEntityRelationshipName": "kollege",
+            "relationshipName": "bestellung",
+            "otherEntityField": "standort",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190428023454",
+    "entityTableName": "kollege",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "glservice",
+    "applications": "*",
+    "microserviceName": "glservice"
+}

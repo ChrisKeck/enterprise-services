@@ -1,0 +1,29 @@
+{
+  "euiApp": {
+    "glserviceBestellung": {
+      "home": {
+        "title": "Bestellungs",
+        "createLabel": "Create a new Bestellung",
+        "createOrEditLabel": "Create or edit a Bestellung"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Bestellung {{ id }}?"
+      },
+      "detail": {
+        "title": "Bestellung"
+      },
+      "standort": "Standort",
+      "von": "Von",
+      "bis": "Bis",
+      "kasten": "Kasten",
+      "kollege": "Kollege"
+    }
+  },
+  "glserviceApp": {
+    "glserviceBestellung": {
+      "created": "A new Bestellung is created with identifier {{ param }}",
+      "updated": "A Bestellung is updated with identifier {{ param }}",
+      "deleted": "A Bestellung is deleted with identifier {{ param }}"
+    }
+  }
+}

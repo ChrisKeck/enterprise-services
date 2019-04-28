@@ -1,0 +1,36 @@
+
+entity Feeling {
+	feeltype FeelType required
+    capacity Integer required
+    isSpeechable Boolean 
+}
+
+entity FeelWheel {
+	subject String required
+    from Instant
+    to Instant
+}
+// defining multiple OneToMany relationships with comments
+entity Employee {
+	email String required
+}
+
+relationship OneToMany {
+FeelWheel{feeling(feeltype)} to Feeling{feelwheel(subject)}
+Employee{feelWheel(subject)} to FeelWheel{employee(email)}
+Employee{employee(email)} to Employee{employee(email)}
+}
+
+enum FeelType {
+	ANGRY, SAD, HAPPY
+}
+
+// Set pagination options
+paginate * with infinite-scroll
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+

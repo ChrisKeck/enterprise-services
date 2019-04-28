@@ -1,0 +1,53 @@
+{
+    "name": "Bestellung",
+    "fields": [
+        {
+            "fieldName": "standort",
+            "fieldType": "Standort",
+            "fieldValues": "KUG,PETERSTRASSE,SWP,TAFELHOF",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "von",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "bis",
+            "fieldType": "Instant",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "kasten",
+            "otherEntityRelationshipName": "bestellung",
+            "relationshipName": "kasten"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "kollege",
+            "otherEntityRelationshipName": "bestellung",
+            "relationshipName": "kollege",
+            "otherEntityField": "email",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190428023453",
+    "entityTableName": "bestellung",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "glservice",
+    "applications": "*",
+    "microserviceName": "glservice"
+}

@@ -1,0 +1,39 @@
+
+entity Kasten {
+	sorte Sorte required
+}
+
+entity Bestellung {
+    standort Standort required
+    von Instant required
+    bis Instant required
+    
+}
+// defining multiple OneToMany relationships with comments
+entity Kollege {
+	email String required
+}
+
+relationship OneToMany {
+Bestellung{Kasten(sorte)} to Kasten{bestellung(standort)}
+}
+relationship ManyToMany{
+Kollege{bestellung(standort)} to Bestellung{kollege(email)}
+
+}
+enum Standort {
+	KUG, PETERSTRASSE, SWP, TAFELHOF
+}
+enum Sorte {
+	MEDIUM, SPRIZIG, STILL, ACE, APFELSCHORLE
+}
+
+// Set pagination options
+paginate * with infinite-scroll
+
+// Use Data Transfert Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/efwservice/efwservice.iml" filepath="$PROJECT_DIR$/efwservice/efwservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/egateway/egateway.iml" filepath="$PROJECT_DIR$/egateway/egateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/enterprise-services.iml" filepath="$PROJECT_DIR$/enterprise-services.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eui/eui.iml" filepath="$PROJECT_DIR$/eui/eui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/glservice/glservice.iml" filepath="$PROJECT_DIR$/glservice/glservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/shared.iml" filepath="$PROJECT_DIR$/shared/shared.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,11 @@
+{
+  "euiApp": {
+    "Standort": {
+      "null": "",
+      "KUG": "KUG",
+      "PETERSTRASSE": "PETERSTRASSE",
+      "SWP": "SWP",
+      "TAFELHOF": "TAFELHOF"
+    }
+  }
+}

@@ -1,25 +1,25 @@
 {
   "generator-jhipster": {
-    "promptValues": {
-      "nativeLanguage": "de"
-    },
     "jhipsterVersion": "6.0.0-beta.0",
-    "applicationType": "monolith",
+    "applicationType": "gateway",
     "baseName": "eui",
     "clientFramework": "angularX",
     "clientTheme": "materia",
     "clientThemeVariant": "dark",
-    "useSass": true,
     "clientPackageManager": "npm",
+    "useSass": true,
     "authenticationType": "jwt",
     "cacheProvider": "no",
-    "databaseType": "postgres",
-    "devDatabaseType": "postgres",
-    "prodDatabaseType": "postgres",
-    "testFrameworks": ["protractor"],
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "testFrameworks": [
+      "protractor"
+    ],
     "jhiPrefix": "jhi",
     "entitySuffix": "",
-    "dtoSuffix": "DTO",
+    "jwtSecretKey": "MmJhYWRjZmE0MmZmMjc0MTA2YTc0NDBmMjg3NGFmZmM5NWQ1ZGFkN2FmMzRjZWI5ZmI2ODJjYjc1ZGQ4MWE1MDY1NWQ5YTlkZjliN2NmNDI4NThlNjczODU2NTMwYWVhZmJkYjMxY2RlZmJlOTdhNzQ5NDVjYjdjYWE3MDdlYTA=",
+    "buildTool": "maven",
     "otherModules": [
       {
         "name": "generator-jhipster-nav-element",
@@ -160,7 +160,12 @@
     ],
     "enableTranslation": true,
     "nativeLanguage": "de",
-    "languages": ["de", "en"],
-    "skipServer": true
+    "languages": [
+      "de",
+      "en"
+    ],
+    "promptValues": {
+      "microservicePath": "../efwservice"
+    }
   }
 }

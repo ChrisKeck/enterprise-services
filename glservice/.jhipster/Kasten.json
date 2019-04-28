@@ -1,0 +1,32 @@
+{
+    "name": "Kasten",
+    "fields": [
+        {
+            "fieldName": "sorte",
+            "fieldType": "Sorte",
+            "fieldValues": "MEDIUM,SPRIZIG,STILL,ACE,APFELSCHORLE",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "bestellung",
+            "otherEntityRelationshipName": "kasten",
+            "relationshipName": "bestellung",
+            "otherEntityField": "standort"
+        }
+    ],
+    "changelogDate": "20190428023452",
+    "entityTableName": "kasten",
+    "dto": "mapstruct",
+    "pagination": "infinite-scroll",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "glservice",
+    "applications": "*",
+    "microserviceName": "glservice"
+}

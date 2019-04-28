@@ -1,0 +1,26 @@
+{
+  "euiApp": {
+    "glserviceKasten": {
+      "home": {
+        "title": "Kastens",
+        "createLabel": "Create a new Kasten",
+        "createOrEditLabel": "Create or edit a Kasten"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Kasten {{ id }}?"
+      },
+      "detail": {
+        "title": "Kasten"
+      },
+      "sorte": "Sorte",
+      "bestellung": "Bestellung"
+    }
+  },
+  "glserviceApp": {
+    "glserviceKasten": {
+      "created": "A new Kasten is created with identifier {{ param }}",
+      "updated": "A Kasten is updated with identifier {{ param }}",
+      "deleted": "A Kasten is deleted with identifier {{ param }}"
+    }
+  }
+}

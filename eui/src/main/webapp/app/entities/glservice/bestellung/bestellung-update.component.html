@@ -1,0 +1,71 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-bestellung-heading" jhiTranslate="euiApp.glserviceBestellung.home.createOrEditLabel">Create or edit a Bestellung</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!bestellung.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="euiApp.glserviceBestellung.standort" for="field_standort">Standort</label>
+                    <select class="form-control" name="standort" formControlName="standort" id="field_standort">
+                        <option value="KUG">{{'euiApp.Standort.KUG' | translate}}</option>
+                        <option value="PETERSTRASSE">{{'euiApp.Standort.PETERSTRASSE' | translate}}</option>
+                        <option value="SWP">{{'euiApp.Standort.SWP' | translate}}</option>
+                        <option value="TAFELHOF">{{'euiApp.Standort.TAFELHOF' | translate}}</option>
+                    </select>
+                    <div *ngIf="editForm.get('standort').invalid && (editForm.get('standort').dirty || editForm.get('standort').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('standort').errors.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="euiApp.glserviceBestellung.von" for="field_von">Von</label>
+                    <div class="d-flex">
+                        <input id="field_von" type="datetime-local" class="form-control" name="von" formControlName="von" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                    <div *ngIf="editForm.get('von').invalid && (editForm.get('von').dirty || editForm.get('von').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('von').errors.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('von').errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="euiApp.glserviceBestellung.bis" for="field_bis">Bis</label>
+                    <div class="d-flex">
+                        <input id="field_bis" type="datetime-local" class="form-control" name="bis" formControlName="bis" placeholder="YYYY-MM-DD HH:mm"/>
+                    </div>
+                    <div *ngIf="editForm.get('bis').invalid && (editForm.get('bis').dirty || editForm.get('bis').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('bis').errors.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('bis').errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

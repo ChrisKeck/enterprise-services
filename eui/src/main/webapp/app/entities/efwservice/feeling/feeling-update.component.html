@@ -1,0 +1,65 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+            <h2 id="jhi-feeling-heading" jhiTranslate="euiApp.efwserviceFeeling.home.createOrEditLabel">Create or edit a Feeling</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!feeling.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id" formControlName="id"
+                        readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="euiApp.efwserviceFeeling.feeltype" for="field_feeltype">Feeltype</label>
+                    <select class="form-control" name="feeltype" formControlName="feeltype" id="field_feeltype">
+                        <option value="ANGRY">{{'euiApp.FeelType.ANGRY' | translate}}</option>
+                        <option value="SAD">{{'euiApp.FeelType.SAD' | translate}}</option>
+                        <option value="HAPPY">{{'euiApp.FeelType.HAPPY' | translate}}</option>
+                    </select>
+                    <div *ngIf="editForm.get('feeltype').invalid && (editForm.get('feeltype').dirty || editForm.get('feeltype').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('feeltype').errors.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="euiApp.efwserviceFeeling.capacity" for="field_capacity">Capacity</label>
+                    <input type="number" class="form-control" name="capacity" id="field_capacity"
+                           formControlName="capacity"/>
+                    <div *ngIf="editForm.get('capacity').invalid && (editForm.get('capacity').dirty || editForm.get('capacity').touched)">
+                        <small class="form-text text-danger"
+                               *ngIf="editForm.get('capacity').errors.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.get('capacity')?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="euiApp.efwserviceFeeling.isSpeechable" for="field_isSpeechable">Is Speechable</label>
+                    <input type="checkbox" class="form-control" name="isSpeechable" id="field_isSpeechable"
+                           formControlName="isSpeechable"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="euiApp.efwserviceFeeling.feelwheel" for="field_feelwheel">Feelwheel</label>
+                    <select class="form-control" id="field_feelwheel" name="feelwheel" formControlName="feelwheelId">
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="feelWheelOption.id" *ngFor="let feelWheelOption of feelwheels; trackBy: trackFeelWheelById">{{feelWheelOption.subject}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

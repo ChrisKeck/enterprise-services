@@ -1,0 +1,29 @@
+{
+  "euiApp": {
+    "glserviceBestellung": {
+      "home": {
+        "title": "Bestellungs",
+        "createLabel": "Bestellung erstellen",
+        "createOrEditLabel": "Bestellung erstellen oder bearbeiten"
+      },
+      "delete": {
+        "question": "Soll Bestellung {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Bestellung"
+      },
+      "standort": "Standort",
+      "von": "Von",
+      "bis": "Bis",
+      "kasten": "Kasten",
+      "kollege": "Kollege"
+    }
+  },
+  "glserviceApp": {
+    "glserviceBestellung": {
+      "created": "Bestellung erstellt mit ID {{ param }}",
+      "updated": "Bestellung aktualisiert mit ID {{ param }}",
+      "deleted": "Bestellung gelöscht mit ID {{ param }}"
+    }
+  }
+}

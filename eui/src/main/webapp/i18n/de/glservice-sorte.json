@@ -1,0 +1,12 @@
+{
+  "euiApp": {
+    "Sorte": {
+      "null": "",
+      "MEDIUM": "MEDIUM",
+      "SPRIZIG": "SPRIZIG",
+      "STILL": "STILL",
+      "ACE": "ACE",
+      "APFELSCHORLE": "APFELSCHORLE"
+    }
+  }
+}
