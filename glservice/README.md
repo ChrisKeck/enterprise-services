@@ -14,6 +14,16 @@ To start your application in the dev profile, simply run:
 
 For further instructions on how to develop with JHipster, have a look at [Using JHipster in development][].
 
+### Standalone Development
+
+During backend development, you can disable cross cutting concerns (discovery, security, cors etc), with an add-on standalone profile. Simply run:
+
+    ./mvnw -Pdev,standalone
+
+To start frontend in standalone mode, use following script:
+
+    npm run start:standalone
+
 ## Building for production
 
 ### Packaging as jar

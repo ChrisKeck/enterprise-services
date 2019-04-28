@@ -12,7 +12,8 @@
     },
     "indicator": {
       "diskSpace": "Disk space",
-      "mail": "Email"
+      "mail": "Email",
+      "db": "Database"
     },
     "table": {
       "service": "Service name",

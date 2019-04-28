@@ -39,5 +39,9 @@
       "en"
     ],
     "skipClient": true
+  },
+  "generator-jhipster-standalone-profile": {
+    "version": "2.3.0",
+    "server": true
   }
 }

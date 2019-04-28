@@ -8,7 +8,10 @@
     "node_modules"
   ],
   "devDependencies": {
-    "generator-jhipster": "6.0.0-beta.0"
+    "generator-jhipster": "6.0.0-beta.0",
+    "generator-jhipster-docker": "2.5.0",
+    "generator-jhipster-standalone-profile": "2.3.0",
+    "generator-jhipster-testcontainers": "0.1.1"
   },
   "engines": {
     "node": ">=8.9.0"

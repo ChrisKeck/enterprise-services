@@ -44,6 +44,16 @@ describe('Service Tests', () => {
         expect(expectedResult).toEqual('user');
       });
 
+      it('should return Authorities', () => {
+        service.authorities().subscribe(_authorities => {
+          expectedResult = _authorities;
+        });
+        const req = httpMock.expectOne({ method: 'GET' });
+
+        req.flush(['ROLE_USER', 'ROLE_ADMIN']);
+        expect(expectedResult).toEqual(['ROLE_USER', 'ROLE_ADMIN']);
+      });
+
       it('should propagate not found response', () => {
         service.find('user').subscribe(null, (_error: any) => {
           expectedResult = _error.status;

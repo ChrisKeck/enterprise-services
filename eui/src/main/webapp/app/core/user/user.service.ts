@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpResponse } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 import { SERVER_API_URL } from 'app/app.constants';
 import { createRequestOption } from 'app/shared/util/request-util';
@@ -34,6 +34,6 @@ export class UserService {
   }
 
   authorities(): Observable<string[]> {
-    return of(['ROLE_USER', 'ROLE_ADMIN']);
+    return this.http.get<string[]>(SERVER_API_URL + 'api/users/authorities');
   }
 }

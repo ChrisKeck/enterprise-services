@@ -5,6 +5,7 @@ import de.iso.apps.security.jwt.*;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.Profile;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -15,6 +16,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.zalando.problem.spring.web.advice.security.SecurityProblemSupport;
 
 @EnableWebSecurity
+@Profile("!standalone")
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 @Import(SecurityProblemSupport.class)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {

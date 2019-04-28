@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="eui:war">
+    <output-path>$PROJECT_DIR$/eui/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>eui</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="eui-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="eui:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -7,12 +7,6 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entitäten",
-        "glserviceKollege": "Kollege",
-        "glserviceBestellung": "Bestellung",
-        "glserviceKasten": "Kasten",
-        "efwserviceEmployee": "Employee",
-        "efwserviceFeelWheel": "Feel Wheel",
-        "efwserviceFeeling": "Feeling",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {

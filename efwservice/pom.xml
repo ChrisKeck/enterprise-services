@@ -296,6 +296,12 @@
             <artifactId>cucumber-spring</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.testcontainers</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
         <!-- jhipster-needle-maven-add-dependency -->
     </dependencies>
 
@@ -531,6 +537,7 @@
                           <useCurrentTimestamp>true</useCurrentTimestamp>
                       </container>
                   </configuration>
+                    <executions><execution><goals><goal>dockerBuild</goal></goals><phase>install</phase></execution></executions>
                 </plugin>
                 <plugin>
                     <groupId>org.liquibase</groupId>
@@ -913,6 +920,12 @@
                     </plugins>
                 </pluginManagement>
             </build>
+        </profile>
+        <profile>
+            <id>standalone</id>
+            <properties>
+                <spring.profiles.active>dev,standalone${profile.swagger}${profile.no-liquibase}</spring.profiles.active>
+            </properties>
         </profile>
         <!-- jhipster-needle-maven-add-profile -->
     </profiles>

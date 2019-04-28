@@ -30,9 +30,9 @@
           <entry name="$MAVEN_REPOSITORY$/org/jvnet/staxex/stax-ex/1.8.1/stax-ex-1.8.1.jar" />
           <entry name="$MAVEN_REPOSITORY$/com/sun/xml/fastinfoset/FastInfoset/1.2.16/FastInfoset-1.2.16.jar" />
         </processorPath>
-        <module name="egateway" />
         <module name="glservice" />
         <module name="efwservice" />
+        <module name="egateway" />
       </profile>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -46,9 +46,13 @@
       <module name="efwservice" target="1.8" />
       <module name="egateway" target="1.8" />
       <module name="enterprise-services" target="1.8" />
-      <module name="eui" target="1.8" />
+      <module name="eui" target="1.8.0_191" />
       <module name="glservice" target="1.8" />
-      <module name="shared" target="1.8" />
+      <module name="shared" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="TypeScriptCompiler">
+    <option name="recompileOnChanges" value="true" />
+    <option name="scopeName" value="Module 'eui'" />
   </component>
 </project>

@@ -12,7 +12,8 @@
     },
     "indicator": {
       "diskSpace": "Festplattenspeicher",
-      "mail": "Email"
+      "mail": "Email",
+      "db": "Datenbank"
     },
     "table": {
       "service": "Dienst Name",
