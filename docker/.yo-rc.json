@@ -1,0 +1,17 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "efwservice",
+      "egateway",
+      "glservice"
+    ],
+    "directoryPath": "../",
+    "gatewayType": "zuul",
+    "monitoring": "elk",
+    "consoleOptions": [
+      "zipkin"
+    ],
+    "serviceDiscoveryType": "eureka",
+    "jwtSecretKey": "ZmVhY2I2ZjhkNGQ0Y2RhMTRhMDZlMjBkZDgwZmQ3NmY4YTFkYmMxNzdmZDdiOGQzZjVhZjc4MTc1OGFhNDRkZDAyMDllODQ0MWVmNGNiMDA4YjUzYzc2MGNjMWMwYmMwY2U0OA=="
+  }
+}
