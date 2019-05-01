@@ -1,0 +1,10 @@
+{
+  "euiApp": {
+    "FeelType": {
+      "null": "",
+      "ANGRY": "ANGRY",
+      "SAD": "SAD",
+      "HAPPY": "HAPPY"
+    }
+  }
+}

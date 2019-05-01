@@ -1,119 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="405b2b61-ecc8-46ab-ba9d-d85ea0b486ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eui/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/KafkaConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/ChangedEventArgs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/MailChangingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/impl/AbstractChangedListenerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/impl/AbstractMailChangingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/mapper/ChangingMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/efwservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/efwservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/EgatewayApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/EgatewayApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/aop/logging/LoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/aop/logging/LoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/CacheConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/CacheConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/CloudDatabaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/CloudDatabaseConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/DatabaseConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/DatabaseConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/DefaultProfileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/DefaultProfileUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/GatewayConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/GatewayConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/JacksonConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/JacksonConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/LocaleConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/LocaleConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/LoggingAspectConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/LoggingAspectConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/LoggingConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/LoggingConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/MessagingConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/MessagingConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/StandaloneSecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/StandaloneSecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/WebConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/WebConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/apidoc/GatewaySwaggerResourcesProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/apidoc/GatewaySwaggerResourcesProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/audit/AuditEventConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/config/audit/AuditEventConverter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/AbstractAuditingEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/AbstractAuditingEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/Authority.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/Authority.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/PersistentAuditEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/PersistentAuditEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/gateway/accesscontrol/AccessControlFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/gateway/accesscontrol/AccessControlFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/gateway/ratelimiting/RateLimitingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/gateway/ratelimiting/RateLimitingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/gateway/responserewriting/SwaggerBasePathRewritingFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/gateway/responserewriting/SwaggerBasePathRewritingFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/repository/AuthorityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/repository/AuthorityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/repository/CustomAuditEventRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/repository/CustomAuditEventRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/security/DomainUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/security/DomainUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/security/SpringSecurityAuditorAware.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/security/SpringSecurityAuditorAware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/security/jwt/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/security/jwt/TokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/MailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/MailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/dto/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/service/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/AccountResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/AccountResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/AuditResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/AuditResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/GatewayResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/GatewayResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/LogsResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/LogsResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/UserJWTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/UserJWTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/errors/ExceptionTranslator.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/errors/ExceptionTranslator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/vm/ManagedUserVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/vm/ManagedUserVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/vm/RouteVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/main/java/de/iso/apps/web/rest/vm/RouteVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/config/IntegrationTestsConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/config/IntegrationTestsConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/config/WebConfigurerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/config/WebConfigurerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/config/timezone/HibernateTimeZoneIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/config/timezone/HibernateTimeZoneIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/cucumber/CucumberContextConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/cucumber/CucumberContextConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/cucumber/CucumberIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/cucumber/CucumberIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/cucumber/stepdefs/UserStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/cucumber/stepdefs/UserStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/gateway/responserewriting/SwaggerBasePathRewritingFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/gateway/responserewriting/SwaggerBasePathRewritingFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/repository/CustomAuditEventRepositoryIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/repository/CustomAuditEventRepositoryIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/repository/timezone/DateTimeWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/repository/timezone/DateTimeWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/security/DomainUserDetailsServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/security/DomainUserDetailsServiceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/security/jwt/JWTFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/security/jwt/JWTFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/security/jwt/TokenProviderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/security/jwt/TokenProviderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/service/MailServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/service/MailServiceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/service/UserServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/service/UserServiceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/AccountResourceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/AccountResourceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/AuditResourceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/AuditResourceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/LogsResourceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/LogsResourceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/UserJWTControllerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/UserJWTControllerIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/UserResourceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/UserResourceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/errors/ExceptionTranslatorTestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/egateway/src/test/java/de/iso/apps/web/rest/errors/ExceptionTranslatorTestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/.yo-rc.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/.yo-rc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/sonar-project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eui/sonar-project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/app.constants.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/app.constants.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/core/core.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/core/core.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/entities/entity.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/entities/entity.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/layouts/main/main.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/layouts/main/main.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/layouts/main/main.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/layouts/main/main.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/layouts/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/layouts/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/shared/shared-libs.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/shared/shared-libs.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/shared/shared.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/app/vendor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/app/vendor.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/content/css/loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/content/css/loading.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/content/scss/vendor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/content/scss/vendor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/i18n/de/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/i18n/de/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/i18n/en/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/i18n/en/global.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/src/test/javascript/protractor.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/eui/src/test/javascript/protractor.conf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/tsconfig-aot.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/tsconfig-aot.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/eui/tslint.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/webpack/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/eui/webpack/webpack.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eui/webpack/webpack.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/eui/webpack/webpack.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/glservice/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/glservice/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/shared.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shared/shared.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/GenericExternalObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/GenericExternalObserver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/MailChangingEventArgs.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/MailChangingEventArgs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/mapper/MailChangingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/mapper/MailChangingMapper.java" afterDir="false" />
-    </list>
+    <list default="true" id="405b2b61-ecc8-46ab-ba9d-d85ea0b486ab" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/efwservice/node_modules/" />
     <ignored path="$PROJECT_DIR$/egateway/node_modules/" />
@@ -125,6 +13,7 @@
     <ignored path="$PROJECT_DIR$/egateway/target/" />
     <ignored path="$PROJECT_DIR$/shared/target/" />
     <ignored path="$PROJECT_DIR$/eui/target/" />
+    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,12 +40,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/KafkaConfiguration.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/AbstractKafkaConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="98" column="19" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+            <state relative-caret-position="114">
+              <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
               <folding>
+                <element signature="e#2146#2147#0" expanded="true" />
                 <element signature="e#3102#3133#0" expanded="true" />
                 <element signature="e#3145#3156#0" expanded="true" />
               </folding>
@@ -173,7 +63,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/GenericExternalObserver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
@@ -291,7 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eui/.yo-rc.json" />
         <option value="$PROJECT_DIR$/eui/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/eui/src/main/webapp/app/shared/shared-libs.module.ts" />
         <option value="$PROJECT_DIR$/eui/src/main/webapp/app/primeng/menu/menu/menudemo.component.ts" />
@@ -340,8 +229,9 @@
         <option value="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/mapper/MailChangingMapper.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/impl/MailChangingListenerService.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/service/impl/AbstractChangedListenerService.java" />
-        <option value="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/KafkaConfiguration.java" />
         <option value="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/GenericExternalObserver.java" />
+        <option value="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/KafkaConfiguration.java" />
+        <option value="$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/AbstractKafkaConfiguration.java" />
       </list>
     </option>
   </component>
@@ -431,6 +321,19 @@
           <item name="Glservice" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Enterprise-Services" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Modules" type="87271259:MavenProjectsStructure$ModulesNode" />
+          <item name="shared" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Enterprise-Services" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Modules" type="87271259:MavenProjectsStructure$ModulesNode" />
+          <item name="shared" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
       </expand>
       <select />
     </treeState>
@@ -446,7 +349,7 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
-      <hideEmptyPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -461,68 +364,60 @@
             <path>
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
               <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="efwservice" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
               <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="egateway" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
+              <item name="egateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
               <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="egateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
               <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="egateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
               <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="egateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="iso" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="iso" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
               <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="egateway" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="iso" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
+              <item name="egateway" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -530,13 +425,19 @@
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
               <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
               <item name="shared" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="iso" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="contracts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
@@ -545,36 +446,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="iso" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="iso" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enterprise-services" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enterprise-services" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="de" type="462c0819:PsiDirectoryNode" />
-              <item name="iso" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -597,6 +468,7 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RELEASE_customTagCommitMessage_text" value="Tagging version %name%" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
@@ -698,7 +570,7 @@
       <workItem from="1556415821629" duration="701000" />
       <workItem from="1556416595993" duration="12736000" />
       <workItem from="1556448135989" duration="12200000" />
-      <workItem from="1556563965217" duration="16005000" />
+      <workItem from="1556563965217" duration="16471000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1556419938357</created>
@@ -711,13 +583,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41642000" />
+    <option name="totallyTimeSpent" value="42108000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1920" height="1002" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18401287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38412017" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -733,12 +604,12 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49731758" visible="true" weight="0.3111931" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49731758" weight="0.3111931" />
       <window_info anchor="bottom" id="Docker" order="9" sideWeight="0.49946353" weight="0.3296433" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50429183" side_tool="true" weight="0.32472324" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.3296433" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="13" visible="true" weight="0.3296433" />
       <window_info anchor="bottom" id="TypeScript" order="14" />
       <window_info anchor="bottom" id="CSS-X-Fire" order="15" />
       <window_info anchor="bottom" id="SonarLint" order="16" />
@@ -747,7 +618,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.33530042" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.33530042" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -1104,21 +975,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/KafkaConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="98" column="19" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
-          <folding>
-            <element signature="e#3102#3133#0" expanded="true" />
-            <element signature="e#3145#3156#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shared/src/main/java/de/iso/apps/contracts/GenericExternalObserver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shared/src/main/java/de/iso/apps/config/AbstractKafkaConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+          <folding>
+            <element signature="e#2146#2147#0" expanded="true" />
+            <element signature="e#3102#3133#0" expanded="true" />
+            <element signature="e#3145#3156#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

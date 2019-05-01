@@ -1,0 +1,35 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="bestellung">
+            <h2><span jhiTranslate="euiApp.glserviceBestellung.detail.title">Bestellung</span> {{bestellung.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="euiApp.glserviceBestellung.standort">Standort</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'euiApp.Standort.' + bestellung.standort}}">{{bestellung.standort}}</span>
+                </dd>
+                <dt><span jhiTranslate="euiApp.glserviceBestellung.von">Von</span></dt>
+                <dd>
+                    <span>{{bestellung.von}}</span>
+                </dd>
+                <dt><span jhiTranslate="euiApp.glserviceBestellung.bis">Bis</span></dt>
+                <dd>
+                    <span>{{bestellung.bis}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/bestellung', bestellung.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
