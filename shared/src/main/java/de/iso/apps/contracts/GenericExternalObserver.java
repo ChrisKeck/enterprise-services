@@ -28,8 +28,8 @@ public abstract class GenericExternalObserver<TKey, TValue> implements ExternalO
         return list.clone();
     }
     
-    protected void logEntree(ConsumerRecord<String, MailChangingEventArgs> cr,
-                             MailChangingEventArgs payload) {
+    protected void logEntree(ConsumerRecord<TKey, TValue> cr,
+                             TValue payload) {
         log.info("Logger 1 [JSON] received key {}: Type [{}] | Payload: {} | Record: {}",
                  cr.key(),
                  typeIdHeader(cr.headers()),

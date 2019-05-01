@@ -46,9 +46,9 @@
       <module name="efwservice" target="1.8" />
       <module name="egateway" target="1.8" />
       <module name="enterprise-services" target="1.8" />
-      <module name="eui" target="1.8.0_191" />
+      <module name="eui" target="1.8" />
       <module name="glservice" target="1.8" />
-      <module name="shared" target="1.5" />
+      <module name="shared" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="TypeScriptCompiler">

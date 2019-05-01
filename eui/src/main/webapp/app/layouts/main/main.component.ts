@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRouteSnapshot, NavigationEnd, NavigationError } from '@angular/router';
+import { ActivatedRouteSnapshot, NavigationEnd, NavigationError, Router } from '@angular/router';
 
 import { JhiLanguageHelper } from 'app/core';
 
 @Component({
   selector: 'jhi-main',
-  templateUrl: './main.component.html'
+  templateUrl: './main.component.html',
+  styles: ['div.wrapper{height: auto !important;}']
 })
 export class JhiMainComponent implements OnInit {
   constructor(private jhiLanguageHelper: JhiLanguageHelper, private router: Router) {}

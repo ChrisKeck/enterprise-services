@@ -10,7 +10,7 @@
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
     "skipLibCheck": true,
-    "outDir": "build/resources/main/static/app",
+    "outDir": "target/static/app",
     "lib": ["es7", "dom"],
     "typeRoots": ["node_modules/@types"],
     "baseUrl": "./",
@@ -20,7 +20,7 @@
     "importHelpers": true
   },
   "angularCompilerOptions": {
-    "genDir": "build/resources/main/aot",
+    "genDir": "target/aot",
     "skipMetadataEmit": true,
     "fullTemplateTypeCheck": true,
     "preserveWhitespaces": true

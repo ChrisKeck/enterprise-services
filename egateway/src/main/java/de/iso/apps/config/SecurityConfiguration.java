@@ -1,8 +1,8 @@
 package de.iso.apps.config;
 
-import de.iso.apps.security.*;
-import de.iso.apps.security.jwt.*;
-
+import de.iso.apps.security.AuthoritiesConstants;
+import de.iso.apps.security.jwt.JWTConfigurer;
+import de.iso.apps.security.jwt.TokenProvider;
 import org.springframework.beans.factory.BeanInitializationException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.context.annotation.Bean;

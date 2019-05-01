@@ -1,10 +1,11 @@
 {
   "generator-jhipster": {
     "promptValues": {
-      "nativeLanguage": "de"
+      "nativeLanguage": "de",
+      "microservicePath": "../glservice"
     },
     "jhipsterVersion": "6.0.0-beta.0",
-    "applicationType": "monolith",
+    "applicationType": "gateway",
     "baseName": "eui",
     "clientFramework": "angularX",
     "clientTheme": "materia",
@@ -14,8 +15,8 @@
     "authenticationType": "jwt",
     "cacheProvider": "no",
     "databaseType": "sql",
-    "devDatabaseType": "sql",
-    "prodDatabaseType": "sql",
+    "devDatabaseType": "h2disk",
+    "prodDatabaseType": "postgress",
     "testFrameworks": ["protractor"],
     "jhiPrefix": "jhi",
     "entitySuffix": "",
@@ -72,7 +73,11 @@
     ],
     "enableTranslation": true,
     "nativeLanguage": "de",
-    "languages": ["de", "en"],
-    "skipServer": true
+    "languages": ["de", "en"]
+  },
+  "generator-jhipster-standalone-profile": {
+    "version": "2.3.0",
+    "client": true,
+    "server": false
   }
 }

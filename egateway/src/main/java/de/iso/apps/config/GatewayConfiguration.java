@@ -1,11 +1,9 @@
 package de.iso.apps.config;
 
-import io.github.jhipster.config.JHipsterProperties;
-
-import de.iso.apps.gateway.ratelimiting.RateLimitingFilter;
 import de.iso.apps.gateway.accesscontrol.AccessControlFilter;
+import de.iso.apps.gateway.ratelimiting.RateLimitingFilter;
 import de.iso.apps.gateway.responserewriting.SwaggerBasePathRewritingFilter;
-
+import io.github.jhipster.config.JHipsterProperties;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.cloud.netflix.zuul.filters.RouteLocator;
 import org.springframework.context.annotation.Bean;

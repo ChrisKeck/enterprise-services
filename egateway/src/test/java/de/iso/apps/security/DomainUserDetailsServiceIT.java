@@ -3,7 +3,6 @@ package de.iso.apps.security;
 import de.iso.apps.EgatewayApp;
 import de.iso.apps.domain.User;
 import de.iso.apps.repository.UserRepository;
-
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Before;
 import org.junit.Test;

@@ -1,7 +1,7 @@
 package de.iso.apps.cucumber;
 
-import de.iso.apps.EgatewayApp;
 import cucumber.api.java.Before;
+import de.iso.apps.EgatewayApp;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.web.WebAppConfiguration;

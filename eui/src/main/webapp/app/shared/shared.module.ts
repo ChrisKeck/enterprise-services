@@ -1,11 +1,12 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { EuiSharedLibsModule, EuiSharedCommonModule, JhiLoginModalComponent, HasAnyAuthorityDirective } from './';
 
+import { JhMaterialModule } from 'app/shared/jh-material.module';
 @NgModule({
-  imports: [EuiSharedLibsModule, EuiSharedCommonModule],
+  imports: [JhMaterialModule, EuiSharedLibsModule, EuiSharedCommonModule],
   declarations: [JhiLoginModalComponent, HasAnyAuthorityDirective],
   entryComponents: [JhiLoginModalComponent],
-  exports: [EuiSharedCommonModule, JhiLoginModalComponent, HasAnyAuthorityDirective],
+  exports: [JhMaterialModule, EuiSharedCommonModule, JhiLoginModalComponent, HasAnyAuthorityDirective],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class EuiSharedModule {

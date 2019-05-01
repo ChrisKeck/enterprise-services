@@ -1,11 +1,5 @@
 package de.iso.apps.config;
 
-import java.net.InetSocketAddress;
-import java.util.Iterator;
-import java.util.Optional;
-
-import io.github.jhipster.config.JHipsterProperties;
-
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.Level;
 import ch.qos.logback.classic.LoggerContext;
@@ -17,6 +11,7 @@ import ch.qos.logback.core.ConsoleAppender;
 import ch.qos.logback.core.filter.EvaluatorFilter;
 import ch.qos.logback.core.spi.ContextAwareBase;
 import ch.qos.logback.core.spi.FilterReply;
+import io.github.jhipster.config.JHipsterProperties;
 import net.logstash.logback.appender.LogstashTcpSocketAppender;
 import net.logstash.logback.composite.ContextJsonProvider;
 import net.logstash.logback.composite.GlobalCustomFieldsJsonProvider;
@@ -39,6 +34,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.info.BuildProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.annotation.Configuration;
+
+import java.net.InetSocketAddress;
+import java.util.Iterator;
+import java.util.Optional;
 
 @Configuration
 @RefreshScope
@@ -119,7 +118,7 @@ public class LoggingConfiguration {
     }
 
     private LoggingEventCompositeJsonEncoder compositeJsonEncoder(LoggerContext context) {
-        final LoggingEventCompositeJsonEncoder compositeJsonEncoder = new LoggingEventCompositeJsonEncoder();
+        LoggingEventCompositeJsonEncoder compositeJsonEncoder = new LoggingEventCompositeJsonEncoder();
         compositeJsonEncoder.setContext(context);
         compositeJsonEncoder.setProviders(jsonProviders(context));
         compositeJsonEncoder.start();
@@ -127,14 +126,14 @@ public class LoggingConfiguration {
     }
     
     private LogstashEncoder logstashEncoder() {
-        final LogstashEncoder logstashEncoder = new LogstashEncoder();
+        LogstashEncoder logstashEncoder = new LogstashEncoder();
         logstashEncoder.setThrowableConverter(throwableConverter());
         logstashEncoder.setCustomFields(customFields());
         return logstashEncoder;
     }
     
     private LoggingEventJsonProviders jsonProviders(LoggerContext context) {
-        final LoggingEventJsonProviders jsonProviders = new LoggingEventJsonProviders();
+        LoggingEventJsonProviders jsonProviders = new LoggingEventJsonProviders();
         jsonProviders.addArguments(new ArgumentsJsonProvider());
         jsonProviders.addContext(new ContextJsonProvider<>());
         jsonProviders.addGlobalCustomFields(customFieldsJsonProvider());
@@ -151,7 +150,7 @@ public class LoggingConfiguration {
     }
 
     private GlobalCustomFieldsJsonProvider<ILoggingEvent> customFieldsJsonProvider() {
-        final GlobalCustomFieldsJsonProvider<ILoggingEvent> customFieldsJsonProvider = new GlobalCustomFieldsJsonProvider<>();
+        GlobalCustomFieldsJsonProvider<ILoggingEvent> customFieldsJsonProvider = new GlobalCustomFieldsJsonProvider<>();
         customFieldsJsonProvider.setCustomFields(customFields());
         return customFieldsJsonProvider;
     }
@@ -167,7 +166,7 @@ public class LoggingConfiguration {
     }
     
     private LoggerNameJsonProvider loggerNameJsonProvider() {
-        final LoggerNameJsonProvider loggerNameJsonProvider = new LoggerNameJsonProvider();
+        LoggerNameJsonProvider loggerNameJsonProvider = new LoggerNameJsonProvider();
         loggerNameJsonProvider.setShortenedLoggerNameLength(20);
         return loggerNameJsonProvider;
     }
@@ -179,13 +178,13 @@ public class LoggingConfiguration {
     }
 
     private ShortenedThrowableConverter throwableConverter() {
-        final ShortenedThrowableConverter throwableConverter = new ShortenedThrowableConverter();
+        ShortenedThrowableConverter throwableConverter = new ShortenedThrowableConverter();
         throwableConverter.setRootCauseFirst(true);
         return throwableConverter;
     }
     
     private LoggingEventFormattedTimestampJsonProvider timestampJsonProvider() {
-        final LoggingEventFormattedTimestampJsonProvider timestampJsonProvider = new LoggingEventFormattedTimestampJsonProvider();
+        LoggingEventFormattedTimestampJsonProvider timestampJsonProvider = new LoggingEventFormattedTimestampJsonProvider();
         timestampJsonProvider.setTimeZone("UTC");
         timestampJsonProvider.setFieldName("timestamp");
         return timestampJsonProvider;

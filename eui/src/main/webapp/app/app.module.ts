@@ -18,12 +18,19 @@ import { EuiHomeModule } from './home/home.module';
 import { EuiAccountModule } from './account/account.module';
 import { EuiEntityModule } from './entities/entity.module';
 import * as moment from 'moment';
+import { EuiprimengModule } from './primeng/primeng.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import 'hammerjs';
+import { ChatbotRasaModule } from 'angular-chat-widget-rasa';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent, ActiveMenuDirective, ErrorComponent } from './layouts';
 
 @NgModule({
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
     NgxWebstorageModule.forRoot({ prefix: 'jhi', separator: '-' }),
     NgJhipsterModule.forRoot({
       // set below to true to make alerts look like toast
@@ -36,6 +43,8 @@ import { JhiMainComponent, NavbarComponent, FooterComponent, PageRibbonComponent
     EuiCoreModule,
     EuiHomeModule,
     EuiAccountModule,
+    EuiprimengModule,
+    ChatbotRasaModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
     EuiEntityModule,
     EuiAppRoutingModule

@@ -3,10 +3,12 @@ package de.iso.apps.service.mapper;
 import de.iso.apps.domain.Authority;
 import de.iso.apps.domain.User;
 import de.iso.apps.service.dto.UserDTO;
-
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Objects;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**

@@ -1,9 +1,9 @@
 package de.iso.apps.web.rest;
 
-import de.iso.apps.EgatewayApp;
-import de.iso.apps.web.rest.vm.LoggerVM;
 import ch.qos.logback.classic.AsyncAppender;
 import ch.qos.logback.classic.LoggerContext;
+import de.iso.apps.EgatewayApp;
+import de.iso.apps.web.rest.vm.LoggerVM;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

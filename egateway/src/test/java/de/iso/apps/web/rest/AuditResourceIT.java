@@ -4,7 +4,6 @@ import de.iso.apps.EgatewayApp;
 import de.iso.apps.config.audit.AuditEventConverter;
 import de.iso.apps.domain.PersistentAuditEvent;
 import de.iso.apps.repository.PersistenceAuditEventRepository;
-
 import de.iso.apps.service.AuditEventService;
 import org.junit.Before;
 import org.junit.Test;
@@ -26,7 +25,10 @@ import java.time.Instant;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.hamcrest.Matchers.hasItem;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 /**
  * Integration tests for the {@link AuditResource} REST controller.

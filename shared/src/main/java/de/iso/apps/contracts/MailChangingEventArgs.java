@@ -1,11 +1,7 @@
 package de.iso.apps.contracts;
 
-import java.io.Serializable;
-
-public interface MailChangingEventArgs extends Serializable {
+public interface MailChangingEventArgs extends ChangedEventArgs {
     String getNewMail();
     
     String getOldMail();
-    
-    boolean hasChange();
 }

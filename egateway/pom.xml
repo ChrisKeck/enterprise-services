@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>egateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Egateway</name>
-    <parent><groupId>de.iso.apps</groupId><artifactId>enterprise-services</artifactId><version>0.0.1-SNAPSHOT</version><relativePath>../pom.xml</relativePath></parent>
+    <parent>
+        <groupId>de.iso.apps</groupId>
+        <artifactId>enterprise-services</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
     <repositories>
         <!-- jhipster-needle-maven-repository -->
     </repositories>
@@ -24,9 +31,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.github.jhipster</groupId>
-                <artifactId>jhipster-dependencies</artifactId>
-                <version>${jhipster-dependencies.version}</version>
+                <groupId>de.iso.apps</groupId><artifactId>enterprise-services</artifactId><version>${parent.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -337,17 +342,20 @@
                         <path>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
+                            <!--suppress UnresolvedMavenProperty -->
                             <version>${mapstruct.version}</version>
                         </path>
                         <!-- For JPA static metamodel generation -->
                         <path>
                             <groupId>org.hibernate</groupId>
                             <artifactId>hibernate-jpamodelgen</artifactId>
+                            <!--suppress UnresolvedMavenProperty -->
                             <version>${hibernate.version}</version>
                         </path>
                         <path>
                             <groupId>org.glassfish.jaxb</groupId>
                             <artifactId>jaxb-runtime</artifactId>
+                            <!--suppress UnresolvedMavenProperty -->
                             <version>${jaxb-runtime.version}</version>
                         </path>
                     </annotationProcessorPaths>
@@ -358,9 +366,9 @@
                 <artifactId>maven-javadoc-plugin</artifactId>
                 <version>${maven-javadoc-plugin.version}</version>
                 <configuration>
-                  <source>8</source>
+                    <source>8</source>
                 </configuration>
-              </plugin>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-eclipse-plugin</artifactId>
@@ -481,6 +489,7 @@
                             </goals>
                             <configuration>
                                 <!-- Sets the path to the file which contains the execution data. -->
+                                <!--suppress UnresolvedMavenProperty -->
                                 <destFile>${jacoco.utReportFile}</destFile>
                             </configuration>
                         </execution>
@@ -492,7 +501,9 @@
                                 <goal>report</goal>
                             </goals>
                             <configuration>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <dataFile>${jacoco.utReportFile}</dataFile>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <outputDirectory>${jacoco.reportFolder}</outputDirectory>
                             </configuration>
                         </execution>
@@ -503,6 +514,7 @@
                             </goals>
                             <configuration>
                                 <!-- Sets the path to the file which contains the execution data. -->
+                                <!--suppress UnresolvedMavenProperty -->
                                 <destFile>${jacoco.itReportFile}</destFile>
                             </configuration>
                         </execution>
@@ -514,7 +526,9 @@
                                 <goal>report-integration</goal>
                             </goals>
                             <configuration>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <dataFile>${jacoco.itReportFile}</dataFile>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <outputDirectory>${jacoco.reportFolder}</outputDirectory>
                             </configuration>
                         </execution>
@@ -524,31 +538,38 @@
                     <groupId>com.google.cloud.tools</groupId>
                     <artifactId>jib-maven-plugin</artifactId>
                     <version>${jib-maven-plugin.version}</version>
-                    <executions><execution><goals><goal>dockerBuild</goal></goals><phase>install</phase></execution></executions>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>dockerBuild</goal>
+                            </goals>
+                            <phase>install</phase>
+                        </execution>
+                    </executions>
                     <configuration>
-                      <from>
-                          <image>openjdk:11-jre-slim-stretch</image>
-                      </from>
-                      <to>
-                          <image>egateway:latest</image>
-                      </to>
-                      <container>
-                          <entrypoint>
-                              <shell>sh</shell>
-                              <option>-c</option>
-                              <arg>chmod +x /entrypoint.sh &amp;&amp; sync &amp;&amp; /entrypoint.sh</arg>
-                          </entrypoint>
-                          <ports>
-                              <port>8080</port>
-                              <port>5701/udp</port>
-                          </ports>
-                          <environment>
-                              <SPRING_OUTPUT_ANSI_ENABLED>ALWAYS</SPRING_OUTPUT_ANSI_ENABLED>
-                              <JHIPSTER_SLEEP>0</JHIPSTER_SLEEP>
-                          </environment>
-                          <useCurrentTimestamp>true</useCurrentTimestamp>
-                      </container>
-                  </configuration>
+                        <from>
+                            <image>openjdk:11-jre-slim-stretch</image>
+                        </from>
+                        <to>
+                            <image>egateway:latest</image>
+                        </to>
+                        <container>
+                            <entrypoint>
+                                <shell>sh</shell>
+                                <option>-c</option>
+                                <arg>chmod +x /entrypoint.sh &amp;&amp; sync &amp;&amp; /entrypoint.sh</arg>
+                            </entrypoint>
+                            <ports>
+                                <port>8080</port>
+                                <port>5701/udp</port>
+                            </ports>
+                            <environment>
+                                <SPRING_OUTPUT_ANSI_ENABLED>ALWAYS</SPRING_OUTPUT_ANSI_ENABLED>
+                                <JHIPSTER_SLEEP>0</JHIPSTER_SLEEP>
+                            </environment>
+                            <useCurrentTimestamp>true</useCurrentTimestamp>
+                        </container>
+                    </configuration>
                 </plugin>
                 <plugin>
                     <groupId>org.liquibase</groupId>
@@ -556,7 +577,9 @@
                     <version>${liquibase.version}</version>
                     <configuration>
                         <changeLogFile>${project.basedir}/src/main/resources/config/liquibase/master.xml</changeLogFile>
-                        <diffChangeLogFile>${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml</diffChangeLogFile>
+                        <diffChangeLogFile>
+                            ${project.basedir}/src/main/resources/config/liquibase/changelog/${maven.build.timestamp}_changelog.xml
+                        </diffChangeLogFile>
                         <driver>org.h2.Driver</driver>
                         <url>jdbc:h2:file:${project.build.directory}/h2db/db/egateway</url>
                         <defaultSchemaName></defaultSchemaName>
@@ -571,11 +594,13 @@
                         <dependency>
                             <groupId>org.javassist</groupId>
                             <artifactId>javassist</artifactId>
+                            <!--suppress UnresolvedMavenProperty -->
                             <version>${javassist.version}</version>
                         </dependency>
                         <dependency>
                             <groupId>org.liquibase.ext</groupId>
                             <artifactId>liquibase-hibernate5</artifactId>
+                            <!--suppress UnresolvedMavenProperty -->
                             <version>${liquibase-hibernate5.version}</version>
                         </dependency>
                         <dependency>
@@ -618,11 +643,17 @@
                     <configuration>
                         <rules>
                             <requireMavenVersion>
-                                <message>You are running an older version of Maven. JHipster requires at least Maven ${maven.version}</message>
+                                <!--suppress UnresolvedMavenProperty -->
+                                <message>You are running an older version of Maven. JHipster requires at least Maven
+                                    ${maven.version}
+                                </message>
+                                <!--suppress UnresolvedMavenProperty -->
                                 <version>[${maven.version},)</version>
                             </requireMavenVersion>
                             <requireJavaVersion>
-                                <message>You are running an incompatible version of Java. JHipster supports JDK 8 to 12.</message>
+                                <message>You are running an incompatible version of Java. JHipster supports JDK 8 to
+                                    12.
+                                </message>
                                 <version>[1.8,13)</version>
                             </requireJavaVersion>
                         </rules>

@@ -8,19 +8,28 @@ import de.iso.apps.service.MailService;
 import de.iso.apps.service.UserService;
 import de.iso.apps.service.dto.PasswordChangeDTO;
 import de.iso.apps.service.dto.UserDTO;
-import de.iso.apps.web.rest.errors.*;
+import de.iso.apps.web.rest.errors.EmailAlreadyUsedException;
+import de.iso.apps.web.rest.errors.EmailNotFoundException;
+import de.iso.apps.web.rest.errors.InternalServerErrorException;
+import de.iso.apps.web.rest.errors.InvalidPasswordException;
+import de.iso.apps.web.rest.errors.LoginAlreadyUsedException;
 import de.iso.apps.web.rest.vm.KeyAndPasswordVM;
 import de.iso.apps.web.rest.vm.ManagedUserVM;
-
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
-import java.util.*;
+import java.util.Optional;
 
 /**
  * REST controller for managing the current user's account.
